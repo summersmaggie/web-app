@@ -32,7 +32,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(
   session({
     secret: SESSION_SECRET,
-    authRequired: false,
     resave: false,
     saveUninitialized: true,
   })
@@ -41,6 +40,7 @@ app.use(
 app.use(
  auth({
    secret: SESSION_SECRET,
+   authRequired: false,
    auth0Logout: true,
    baseURL: APP_URL,
  })
