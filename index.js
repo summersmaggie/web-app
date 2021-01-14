@@ -46,7 +46,7 @@ app.use(
    baseURL: APP_URL,
    authorizationParams: {
      response_type: "code id_token",
-     audience: "https://expenses-api-new.vercel.app",
+     audience: "https://expenses-api",
      // 👇 add this 👇
      scope: "openid profile email read:reports",
      // 👆 add this 👆
